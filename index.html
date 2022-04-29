@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游理的小冷屋</title>
+    <meta name="keywords" content="信息安全,游理个人播客,Java开发,H5开发,前端后端,网页UI,简约个人主页,个人主页,导航">
+    <meta name="description" content="这里有游理的一点点生活杂碎、也有一点点浅尝辄止_">
+    <meta name="author" content="游理QQ305871230">
+    <link rel="shortcut icon" href="https://hexo.305871230.xyz/Favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <script src="./assets/js/jQuery3.5.1.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="core hd">
+        <!-- 时间 -->
+        <h1 class="time_econd"></span></h1>
+        <h3><span class="time_moon"></span>&nbsp;&nbsp;<span id="clock"></span>&#128513;</h3>
+        <!-- 搜索栏 -->
+        <div class="xf_baidu xf_style">
+            <form action="http://www.baidu.com/baidu" target="_blank">
+                <i></i>
+                <input type="text" name="word" size="30" autocomplete="off" placeholder="百度一下，记得回车">
+                <input type="submit">
+            </form>
+        </div>
+    </header>
+    <!-- 主体 -->
+    <section class="core main xf_style">
+        <!-- 头像 -->
+        <div class="tx">
+            <!-- https://q1.qlogo.cn/g?b=qq&nk=1809185784&s=100 -->
+            <img src="https://q1.qlogo.cn/g?b=qq&nk=305871230&s=100" alt="摸摸游理的脑袋" title="摸摸游理的脑袋">
+        </div>
+        <!-- 姓名 个签 -->
+        <div class="xf_name">
+            <h2>游理</h2>
+            <h4 id="xf_txt"></h4>
+        </div>
+        <!-- 图标 （img里面的是透明图是用来转换超链接） -->
+        <div class="xf_ico_link">
+            <ul>
+                <li><a href="https://www.douyin.com/user/MS4wLjABAAAA1rB1R12-ikAx4jlCntfELoXWBaa_DMfSqIlir9uJV2o"
+                        target="_blank" rel="noopener noreferrer"><img src="./assets/images/transparent.png" alt="抖音"
+                            title="抖音"></a></li>
+                <li><a href="https://wpa.qq.com/msgrd?v=1&uin=305871230&site=qq&menu=yes" target="_blank"
+                        rel="noopener noreferrer"><img src="./assets/images/transparent.png" alt="QQ" title="QQ"></a>
+                </li>
+                <li><a href="mailto:wenwutongxue@gmail.com" target="_blank" rel="noopener noreferrer"><img
+                            src="./assets/images/transparent.png" alt="邮箱" title="邮箱"></a></li>
+                <li><a href="https://space.bilibili.com/89405226" target="_blank" rel="noopener noreferrer"><img
+                            src="./assets/images/transparent.png" alt="bilibili" title="bilibili"></a></li>
+            </ul>
+        </div>
+        <!-- 介绍 -->
+        <div class="xf_introduce">
+            <p id="xf_type"></p>
+        </div>
+        <!-- 滑动效果 -->
+        <p class="xf_slide">&#xeb6d;</p>
+        <div class="xf_website">
+            <a href="http://hexo.305871230.xyz" target="_blank" rel="noopener noreferrer">小冷屋</a>
+            <!--<a href="http://music.xfyun.club" target="_blank" rel="noopener noreferrer">H5播放器</a>
+            <a href="http://www.xfyun.club" target="_blank" rel="noopener noreferrer">免费床图</a>
+            <a href="http://layui.xfwl.club" target="_blank" rel="noopener noreferrer">layui镜像站</a>-->
+        </div>
+    </section>
+    <!-- 底部 -->
+    <footer class="core copy">
+        <p>©2014-2022 <a href="https://www.305871230.xyz" target="_blank" rel="noopener noreferrer">游理</a></p>
+        <p>本站已经运行<a id="days">0/a><a href="https://gitee.com/xfwlclub/ui2.0" target="_blank" rel="noopener noreferrer"></a>天</p>
+    </footer>
+    <audio autoplay>
+        <source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
+    </audio>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".xf_slide").click(function () {
+                $(".xf_website").slideToggle("slow");
+            })
+        })
+    </script>
+    <script src="./assets/js/time.js"></script>
+    <script src="./assets/js/text.js"></script>
+    <script src="./assets/js/fireworks.js"></script>
+    <script>  
+        var 
+        s1 = '2017-10-16';//设置为你的建站时间  
+        s1 = new Date(s1.replace(/-/g, "/"));  
+        s2 = new Date();  var days = s2.getTime() - s1.getTime();  
+        var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));  
+        document.getElementById('days').innerHTML = number_of_days;  
+        </script>
+</body>
+
+</html>
